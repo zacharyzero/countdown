@@ -1,10 +1,10 @@
 #This Python script counts the time remaining until Valentine's Day
 
-#Print the script's purpose
-print ("Countdown to Valentine's Day")
-
 #Imports timedate module from Python
 from datetime import datetime
+
+#Print the script's purpose
+print ("Countdown to Valentine's Day")
 
 #Defining the function for the countdown
 def countdown_to_valentines_day():
@@ -36,3 +36,19 @@ def countdown_to_valentines_day():
 
 # Call the function to start the countdown
 countdown_to_valentines_day()
+
+
+    
+
+    
+    
+
+
+    
+      
+      
+
+
+    
+
+    
