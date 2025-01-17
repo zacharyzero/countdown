@@ -4,12 +4,12 @@
 from datetime import datetime
 
 #Print the script's purpose
-print ("Countdown to Valentine's Day")
+print("Countdown to Valentine's Day")
 
 #Defining the function for the countdown
 def countdown_to_valentines_day():
-    today = datetime.now()  # Gets the current date and time
-    year = today.year  # Extracts the current year
+    today = datetime.now()  # Get the current date and time
+    year = today.year  # Extract the current year
     
     # Define the date for Valentine's Day
     valentines_day = datetime(year, 2, 14)
@@ -17,12 +17,10 @@ def countdown_to_valentines_day():
     # Check if Valentine's Day has already passed this year
     if today > valentines_day:
       valentines_day = datetime(year + 1, 2, 14)
-      print("(Valentine's Day has passed)")
-
-    if today < valentines_day:
+      print("(Valentine's Day has passed for this year.)")
+    elif today < valentines_day:
       print("(Remember to buy flowers and chocolate!)")
-
-    if today == valentines_day:
+    else:  # today == valentines_day
       print("(Buy flowers and chocolate!)")
 
     # Calculate the time remaining
@@ -32,23 +30,7 @@ def countdown_to_valentines_day():
     minutes, seconds = divmod(remainder, 60)
 
     # Print the countdown
-    print(f"Time left until Valentine's Day: {days} days, {hours} hours, {minutes} minutes, {seconds}, seconds.")
+    print(f"Time left until Valentine's Day: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds.")
 
 # Call the function to start the countdown
 countdown_to_valentines_day()
-
-
-    
-
-    
-    
-
-
-    
-      
-      
-
-
-    
-
-    
