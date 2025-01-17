@@ -12,12 +12,13 @@ def go_skate_day_countdown():
   go_skate_day = datetime(year, 6, 21)
 
   if today.date() == go_skate_day.date():
-    print("Today is National Go Skateboarding Day!")
+    print("\nToday is National Go Skateboarding Day!")
     return
-  
-  #Determine if if go skate day has passed
-  if today > go_skate_day:
+  elif today > go_skate_day:
     go_skate_day = datetime(year + 1, 6, 21)
+    print("\nNational Go Skateboarding Day has passed for this year.")
+  else:
+    print("\nNational Go Skateboarding Day is coming up!")
 
   #Countdown the day until go skate day
   countdown = go_skate_day - today
@@ -26,7 +27,17 @@ def go_skate_day_countdown():
   minutes, seconds = divmod(remainder, 60)
 
   #Display the time remaining until go skate day
-  print(f"Time remaining until National Go Skateboarding Day: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds!")
+  print(f"\nTime remaining until National Go Skateboarding Day: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds!")
 
 #Call the function to countdown the days 
 go_skate_day_countdown()
+
+
+  
+  
+  
+
+
+  
+  
+  
