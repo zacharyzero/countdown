@@ -31,13 +31,3 @@ def go_skate_day_countdown():
 
 #Call the function to countdown the days 
 go_skate_day_countdown()
-
-
-  
-  
-  
-
-
-  
-  
-  
